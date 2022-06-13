@@ -126,3 +126,7 @@ body {
   border: none;
   cursor: pointer;
 }
+
+path.current-floor {
+  opacity: 1;
+}
