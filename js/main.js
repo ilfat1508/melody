@@ -18,7 +18,7 @@ $(document).ready(function () {
         $(floorPath).removeClass("current-floor")
         $(`[data-floor=${usCurrentFloor}]`).toggleClass("current-floor");
        }
-    })
+    });
 
     counterDown.on('click', function () {
          if (currentFloor > 2) {
@@ -29,5 +29,5 @@ $(document).ready(function () {
         $(floorPath).removeClass("current-floor")
         $(`[data-floor=${usCurrentFloor}]`).toggleClass("current-floor");
        }
-    })
+    });
 });
