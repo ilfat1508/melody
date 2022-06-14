@@ -14,7 +14,7 @@ $(document).ready(function () {
             currentFloor++;
         usCurrentFloor = currentFloor.toLocaleString('en-US', {minimumIntegerDigits:2,
         useGrouping: false});
-        floorPath.text(usCurrentFloor);
+        $(".counter").text(usCurrentFloor);
         $(floorPath).removeClass("current-floor")
         $(`[data-floor=${usCurrentFloor}]`).toggleClass("current-floor");
        }
@@ -25,7 +25,7 @@ $(document).ready(function () {
             currentFloor--;
         usCurrentFloor = currentFloor.toLocaleString('en-US', {minimumIntegerDigits:2,
         useGrouping: false});
-        floorPath.text(usCurrentFloor);
+        $(".counter").text(usCurrentFloor);
         $(floorPath).removeClass("current-floor")
         $(`[data-floor=${usCurrentFloor}]`).toggleClass("current-floor");
        }
